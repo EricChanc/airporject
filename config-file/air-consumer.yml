@@ -1,0 +1,13 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: air-consumer
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7776/eureka
+feign:
+  circuitbreaker:
+    enabled: true
+
